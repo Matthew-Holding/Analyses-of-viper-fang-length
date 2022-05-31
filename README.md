@@ -40,7 +40,7 @@ compdata<-read.table(file = "FangDataFinal.txt", sep = "\t", header = TRUE)
 compdata$logHL <- log(compdata$HL)
 compdata$logMFL <- log(compdata$MFL)
 
-#Read name-edited version of the ultrametric viperid species tree from Alencar et al. 2016
+#Read name-edited version of the ultrametric Viperidae species tree from Alencar et al. 2016
 tree <- read.newick(file="Vipertree_named.tre")
 check<-name.check(tree, data)
 check
@@ -247,7 +247,7 @@ treepath <- "~/Desktop/FangPaper_Clean/Posterior_trees_vipers/Test/"
 treelist <- dir(treepath, pattern ="tree")
 ```
 
-#### Note that below this point code is written to be run on a single 'pglsModel' at a time while looping through a posterior set of 200 trees from Alencar et al. 2016. This portion of code *will not run* with a single click. Instead, specific pglsModel anew each time.
+#### Note that below this point code is written to be run on a single 'pglsModel' at a time while looping through a posterior set of 200 trees from Alencar et al. 2016. This portion of code *will not run* with a single click. Instead, specify pglsModel anew each time.
 
 ```
 #model list:
